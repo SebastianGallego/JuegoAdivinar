@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Sebastián Gallego">
+    <meta name="description" content="Juego para Adivinar el número">
+    <meta name="keywords" content="juego, adivinar, numero">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Adivinar el Nro | Sebastian Gallego</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+
+
+</head>
+
+<body>
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md  ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbar-toggler">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="logo.png" width="120" alt="Logo Dado" class="navLogo">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#somos">Como se Juega</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#elegirnos">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main -->
+    <main class="main">
+        <section
+            class="sectionPrincipal container-fluid d-flex flex-column justify-content-center align-items-center align-items-stretch ">
+            <h1 class="titulo text-center"> Juego adivina el número </h1>
+            <h3 class="consigna text-center">Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes
+                adivinar en 10
+                turnos o menos. Vamos a decirte si tu número es más alto o más bajo. </h3>
+        </section>
+
+        <section class="containerIntentos container-fluid d-flex align-items-center justify-content-center mt-5">
+            <h1 class="consigna p-2">Adivina el número: </h1>
+            <input type="number" id="guessInput" maxlength="3" class="m-3">
+            <button onclick="checkGuess()" class="btn btn-light btn-lg ">Enviar Respuesta</button>
+            <p id="message"></p>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Como se Juega -->
+    <section class="seccionReglas">
+        <h3 class="reglasNegocio">Quiero que crees un sencillo juego del tipo "adivina el número". Se debe elegir un
+            número aleatorio entre 1 y 100, luego desafiar al jugador a adivinar el número en 10 intentos. Después de
+            cada intento, debería decirle al jugador si ha acertado o no — y si está equivocado, debería decirle si se
+            ha quedado corto o se ha pasado. También debería decir los números que ya se probaron anteriormente. El
+            juego terminará una vez que el jugador acierte o cuando se acaben los intentos. Cuando el juego termina, se
+            le debe dar al jugador la opción de volver a jugar.</h3>
+
+
+
+    </section>
+
+
+
+
+
+    <!-- Pie de pagina (footer) -->
+    <footer class="row seccionFooter d-flex  align-items-center justify-content-center">
+
+        <div class="footerCenter col-md-4 container-fluid d-flex flex-column align-items-center">
+            <p class="footerTexto text-center">Juego de Azar</p>
+            <img class="footerLogo" src="logo.png" alt="Logo del portafolio">
+            <p class="derechosAutor d-flex justify-content-center">Sebastián Gallego (2023) &#169</p>
+        </div>
+
+        <div class="footerLeft col-md-4 container-fluid d-flex flex-column align-items-center">
+            <p class="footerTexto text-center">Redes Sociales</p>
+            <div class="iconosRedesSociales d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://twitter.com/freecodecampES" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=340715100100" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&family=Poppins:ital,wght@1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&family=Belanosima&family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  
+  font-family: 'Belanosima', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*  Paleta de colores:  */
+
+:root {
+  --naranja: #FC7300;
+  --verde: #1F8A70;
+  --azul: #00425A;
+  --negro: #181823;
+  --blanco: #EFF5F5;
+}
+
+
+
+
+/* Estilos Generales   */
+
+body {
+  background-color: var(--blanco); 
+}
+
+hr {
+  color: var(--naranja);
+  border: 2px solid ;
+} 
+
+
+.header {
+  color: var(--naranja);
+  font-size: 30px;
+  padding: 10px;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.bigicon {
+  font-size: 32px;
+  color: var(--naranja);
+}
+
+/* Estilos Nav   */
+
+.navbar-brand img {
+  height: 100px;
+}
+
+.navbar {
+ background-color: var(--azul);
+}
+
+.nav-item a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight:bold;
+    color: var(--verde);
+}
+
+.nav-link:hover {
+  color: var(--naranja);
+  transition:  0.5s ease;
+}
+
+
+/* Estilo Main   */
+
+
+.main {
+  
+  min-height: 550px;
+  background-color: var(--negro); 
+
+}
+
+.sectionPrincipal {
+  
+  
+}
+
+.titulo {
+  font-size: 28px;
+  color: var(--blanco);
+  font-weight: bold;
+  padding: 6px;
+}
+
+.consigna {
+  font-size: 26px;
+  color: var(--blanco);
+  font-weight: bold;
+  padding: 6px;
+}
+
+.containerIntentos {
+ 
+
+}
+
+
+/* footer */
+
+footer {
+  min-height: 250px;
+  background-color: var(--naranja);
+}
+
+
+.footerLogo {
+  width: 150px;
+}
+
+.footerTexto {
+  font-size: 1.5rem;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--blanco);
+}
+
+.iconosRedesSociales a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid var(--blanco);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconosRedesSociales i {
+  color: var(--blanco);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconosRedesSociales a:hover {
+  background-color: var(--blanco);
+  border: 2px solid var(--blanco);
+}
+
+.iconosRedesSociales a:hover i {
+  color: black;
+}
+
+.footerRight a {
+
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid var(--blanco);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.footerRight i {
+  color: var(--blanco);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.footerRight a:hover {
+  background-color: var(--blanco);
+  border: 2px solid var(--blanco);
+}
+
+.footerRight a:hover i {
+  color: black;
+}
+
+
+.derechosAutor {
+  font-size: 18px;
+  color: var(--blanco);
+  font-weight: bold;
+  padding: 6px;
+
+}
+
+/* Responsive */
+
+  
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+  display: none;
+  } 
+}
