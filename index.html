@@ -11,7 +11,7 @@
     <!-- Titulo -->
     <title>Adivinar el Nro | Sebastian Gallego</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/icono.png">
+    <link rel="icon" type="image/x-icon" href="icono.png">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -20,6 +20,10 @@
     <!-- CSS -->
     <link href="style.css" rel="stylesheet">
     <!-- Google Fonts -->
+
+    <!-- JS -->
+    <script defer="" src="script.js"></script>
+
 
 
 </head>
@@ -39,10 +43,13 @@
                 </a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link " href="#somos">Como se Juega</a>
+                        <a class="nav-link " href="#reglas">Como se Juega</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#elegirnos">Contacto</a>
+                        <a class="nav-link " href="">Juego Nuevo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#redes">Contacto</a>
                     </li>
 
                 </ul>
@@ -53,35 +60,46 @@
 
 
     <!-- Main -->
-    <main class="main">
-        <section
-            class="sectionPrincipal container-fluid d-flex flex-column justify-content-center align-items-center align-items-stretch ">
+    <main class="main flex-column justify-content-center">
+        <section class="sectionPrincipal container-fluid ">
             <h1 class="titulo text-center"> Juego adivina el número </h1>
-            <h3 class="consigna text-center">Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes
-                adivinar en 10
-                turnos o menos. Vamos a decirte si tu número es más alto o más bajo. </h3>
+            <h3 class="consigna text-center">Hemos seleccionado un número aleatorio entre 1 y 100.<br> Fíjate si lo
+                puedes
+                adivinar en 10 turnos o menos. <br> Vamos a decirte si tu número es más alto o más bajo. </h3>
         </section>
 
-        <section class="containerIntentos container-fluid d-flex align-items-center justify-content-center mt-5">
-            <h1 class="consigna p-2">Adivina el número: </h1>
-            <input type="number" id="guessInput" maxlength="3" class="m-3">
-            <button onclick="checkGuess()" class="btn btn-light btn-lg ">Enviar Respuesta</button>
-            <p id="message"></p>
+        <div class=" flex-column text-center  mt-5">
+            <div class="d-flex justify-content-center  align-items-center  text-center">
+                <h1 class="intento ">Intento Nro:</h1>
+                <h1 class="intento" id="nroIntento">1</h1>
+            </div>
+            <input type="number" id="nroIngresado" class="m-3">
+            <button onclick="fncResultado()" class="btn btn-light btn-lg ">Enviar Respuesta</button>
+            <p id="mensaje" class="m-3"></p>
+            <p id="listadoIntentos" class="m-3"></p>
+
+        </div>
 
 
-        </section>
 
     </main>
 
 
     <!-- Como se Juega -->
-    <section class="seccionReglas">
-        <h3 class="reglasNegocio">Quiero que crees un sencillo juego del tipo "adivina el número". Se debe elegir un
-            número aleatorio entre 1 y 100, luego desafiar al jugador a adivinar el número en 10 intentos. Después de
+    <section class="seccionReglas" id="reglas">
+
+        <h1 class="comoSeJuega text-center">Consigna de la funcionalidad del juego</h1>
+        <h4 class="reglasNegocio text-center">Quiero que crees un sencillo juego del tipo "adivina el número". <br>Se
+            debe elegir un
+            número aleatorio entre 1 y 100, luego desafiar al jugador a adivinar el número en 10 intentos. <br>Después
+            de
             cada intento, debería decirle al jugador si ha acertado o no — y si está equivocado, debería decirle si se
-            ha quedado corto o se ha pasado. También debería decir los números que ya se probaron anteriormente. El
-            juego terminará una vez que el jugador acierte o cuando se acaben los intentos. Cuando el juego termina, se
-            le debe dar al jugador la opción de volver a jugar.</h3>
+            ha quedado corto o se ha pasado. <br>También debería decir los números que ya se probaron anteriormente.
+            <br>El
+            juego terminará una vez que el jugador acierte o cuando se acaben los intentos. <br>Cuando el juego termina,
+            se
+            le debe dar al jugador la opción de volver a jugar.
+        </h4>
 
 
 
@@ -92,7 +110,7 @@
 
 
     <!-- Pie de pagina (footer) -->
-    <footer class="row seccionFooter d-flex  align-items-center justify-content-center">
+    <footer id="redes" class="row seccionFooter d-flex  align-items-center justify-content-center">
 
         <div class="footerCenter col-md-4 container-fluid d-flex flex-column align-items-center">
             <p class="footerTexto text-center">Juego de Azar</p>
@@ -117,11 +135,6 @@
                 </a>
             </div>
         </div>
-
-
-
-
-
     </footer>
 
 

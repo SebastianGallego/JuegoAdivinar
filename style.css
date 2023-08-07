@@ -8,7 +8,7 @@
   box-sizing: border-box;
   
   font-family: 'Belanosima', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Poppins', sans-serif;*/ 
 }
 
 
@@ -61,7 +61,7 @@ hr {
 }
 
 .nav-item a {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Belanosima', sans-serif;
     font-size: 1.3rem;
     font-weight:bold;
     color: var(--verde);
@@ -93,20 +93,64 @@ hr {
   color: var(--blanco);
   font-weight: bold;
   padding: 6px;
+  font-family: 'Belanosima', sans-serif;
 }
 
-.consigna {
+.consigna, .intento {
   font-size: 26px;
   color: var(--blanco);
   font-weight: bold;
   padding: 6px;
+  font-family: 'Belanosima', sans-serif;
 }
+
+
 
 .containerIntentos {
- 
+ border-color: var(--naranja);
+ border-width: 2px solid;
 
 }
 
+#nroIngresado{
+  font-size: 26px;
+  text-align: center;
+  
+
+}
+
+#mensaje {
+  color: var(--naranja);
+  font-size: 26px;
+}
+
+#listadoIntentos {
+  color: var(--naranja);
+  font-size: 26px;
+
+}
+
+.seccionReglas { 
+ background-color: var(--azul);
+}
+
+
+.seccionReglas h1  {
+  padding-top: 20px;
+  font-size: 24px;
+  color: var(--naranja);
+  font-weight: bold;
+  font-family: 'Belanosima', sans-serif;
+}
+
+.reglasNegocio {
+  padding-top: 20px;
+  padding-bottom:  20px;
+  font-size: 20px;
+  color: var(--verde);
+  font-weight: bold;
+  font-family: 'Belanosima', sans-serif;
+}
 
 /* footer */
 
@@ -125,7 +169,7 @@ footer {
   padding: 10px;
   font-weight: bold;
   margin-bottom: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Belanosima', sans-serif;
   color: var(--blanco);
 }
 
